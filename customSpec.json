@@ -32,12 +32,8 @@
         "authorities": []
       },
       "palletIndices": {
-        "indices": [],
-        "ids": [
-          "5FnuBQcffpWxbnmPDte5R4w3V7CjeJDbKqRChxPfNcM5Asug",
-          "5CiQA1nn5vZTF3YgapZDjyfM8bE58i3c8RjcG4hCzZyu4sgg",
-          "5FEKbgRL8qsrJEaGmMJbWbLsAXt7sq8Fn6F7gQPXkUK3U4Kb"
-        ]
+        "indices": [
+        ]   
       },
       "palletBalances": {
         "balances": [

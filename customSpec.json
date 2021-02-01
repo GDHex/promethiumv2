@@ -3,8 +3,8 @@
   "id": "promethium",
   "chainType": "Live",
   "bootNodes": [
-    "/dns/199.247.7.80/tcp/30333/p2p/12D3KooWPumo8KT4AY95emw4NbzbFExwdLRx7gN4rCPpF2TkwbQt",
-    "/dns/108.61.177.90/tcp/30333/p2p/12D3KooW9yrE91Jjq7jTBU1wjQqooQYrmFYT9bLmfJ3SVS7zfBGu"
+    "/dns/199.247.7.80/tcp/30333/p2p/12D3KooWB7H8EceWcQTaXCbo5ASGwNUNfEYmt6e7w2c3RmfZYMAd",
+    "/dns/108.61.177.90/tcp/30333/p2p/12D3KooWJFghGbeKtaDcw2v4JjpQfp5wbXhbaW2Qvpd37YEN48BY"
   ],
   "telemetryEndpoints": [
     [

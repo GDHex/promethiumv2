@@ -32,7 +32,12 @@
         "authorities": []
       },
       "palletIndices": {
-        "indices": []
+        "indices": [],
+        "ids": [
+          "5FnuBQcffpWxbnmPDte5R4w3V7CjeJDbKqRChxPfNcM5Asug",
+          "5CiQA1nn5vZTF3YgapZDjyfM8bE58i3c8RjcG4hCzZyu4sgg",
+          "5FEKbgRL8qsrJEaGmMJbWbLsAXt7sq8Fn6F7gQPXkUK3U4Kb"
+        ]
       },
       "palletBalances": {
         "balances": [
@@ -48,8 +53,8 @@
       },
       "palletStaking": {
         "historyDepth": 84,
-        "validatorCount": 4,
-        "minimumValidatorCount": 2,
+        "validatorCount": 100,
+        "minimumValidatorCount": 1,
         "invulnerables": [
           "5FnuBQcffpWxbnmPDte5R4w3V7CjeJDbKqRChxPfNcM5Asug",
           "5CiQA1nn5vZTF3YgapZDjyfM8bE58i3c8RjcG4hCzZyu4sgg"
@@ -99,7 +104,7 @@
       "palletDemocracy": {},
       "palletCollectiveInstance1": {
         "phantom": null,
-        "members": []
+        "members": ["5FnuBQcffpWxbnmPDte5R4w3V7CjeJDbKqRChxPfNcM5Asug"]
       },
       "palletCollectiveInstance2": {
         "phantom": null,

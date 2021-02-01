@@ -1,15 +1,15 @@
-// Copyright 2019-2020 Stafi Protocol.
-// This file is part of Stafi.
+// Copyright 2019-2020 promethium Protocol.
+// This file is part of promethium.
 
-// Stafi is distributed in the hope that it will be useful,
+// promethium is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU General Public License for more details.
 
 // You should have received a copy of the GNU General Public License
-// along with Stafi.  If not, see <http://www.gnu.org/licenses/>.
+// along with promethium.  If not, see <http://www.gnu.org/licenses/>.
 
-//! Stafi chain configurations.
+//! promethium chain configurations.
 
 use sc_chain_spec::ChainSpecExtension;
 use sp_core::{Pair, Public, sr25519};
@@ -46,7 +46,7 @@ const DEFAULT_PROTOCOL_ID: &str = "fis";
 
 /// Node `ChainSpec` extensions.
 ///
-/// Additional parameters for some Stafi core modules,
+/// Additional parameters for some promethium core modules,
 /// customizable from the chain spec.
 #[derive(Default, Clone, Serialize, Deserialize, ChainSpecExtension)]
 #[serde(rename_all = "camelCase")]
@@ -98,17 +98,17 @@ fn properties() -> Option<sc_service::Properties> {
 }
 
 /// Mainnet
-pub fn stafi_mainnet_config() -> Result<ChainSpec, String> {
+pub fn promethium_mainnet_config() -> Result<ChainSpec, String> {
 	ChainSpec::from_json_bytes(&include_bytes!("../res/mainnet.json")[..])
 }
 
 /// Public testnet
-pub fn stafi_testnet_config() -> Result<ChainSpec, String> {
+pub fn promethium_testnet_config() -> Result<ChainSpec, String> {
 	ChainSpec::from_json_bytes(&include_bytes!("../res/testnet.json")[..])
 }
 
 /// Sitara testnet
-pub fn stafi_sitara_testnet_config() -> Result<ChainSpec, String> {
+pub fn promethium_sitara_testnet_config() -> Result<ChainSpec, String> {
 	ChainSpec::from_json_bytes(&include_bytes!("../res/sitara-testnet.json")[..])
 }
 
@@ -121,7 +121,7 @@ fn session_keys(
 	SessionKeys { grandpa, babe, im_online, authority_discovery }
 }
 
-fn stafi_testnet_config_genesis() -> GenesisConfig {
+fn promethium_testnet_config_genesis() -> GenesisConfig {
 	const INITIAL_STASH_STAKED: Balance = 1_000 * FIS;
 	genesis(
 		crate::testnet_fixtures::get_initial_authorities(),
@@ -132,7 +132,7 @@ fn stafi_testnet_config_genesis() -> GenesisConfig {
 	)
 }
 
-fn stafi_sitara_testnet_config_genesis() -> GenesisConfig {
+fn promethium_sitara_testnet_config_genesis() -> GenesisConfig {
 	const INITIAL_STASH_STAKED: Balance = 1_000 * FIS;
 
 	let allocation = get_drop_sitara_allocation().unwrap();
@@ -166,7 +166,7 @@ fn stafi_sitara_testnet_config_genesis() -> GenesisConfig {
 	)
 }
 
-fn stafi_mainnet_config_genesis() -> GenesisConfig {
+fn promethium_mainnet_config_genesis() -> GenesisConfig {
 	const INITIAL_STASH_STAKED: Balance = 300_000 * FIS;
 
 	let allocation = get_drop_mainnet_allocation().unwrap();
@@ -201,12 +201,12 @@ fn stafi_mainnet_config_genesis() -> GenesisConfig {
 }
 
 /// Seiya testnet config.
-pub fn stafi_public_testnet_config() -> ChainSpec {
+pub fn promethium_public_testnet_config() -> ChainSpec {
 	ChainSpec::from_genesis(
-		"Stafi Testnet Seiya",
-		"stafi_public_testnet",
+		"promethium Testnet Seiya",
+		"promethium_public_testnet",
 		ChainType::Live,
-		stafi_testnet_config_genesis,
+		promethium_testnet_config_genesis,
 		crate::testnet_fixtures::get_bootnodes(),
 		Some(TelemetryEndpoints::new(vec![(STAGING_TELEMETRY_URL.to_string(), 0)])
 			.expect("Staging telemetry url is valid; qed")),
@@ -217,12 +217,12 @@ pub fn stafi_public_testnet_config() -> ChainSpec {
 }
 
 /// Sitara testnet config.
-pub fn stafi_incentive_testnet_config() -> ChainSpec {
+pub fn promethium_incentive_testnet_config() -> ChainSpec {
 	ChainSpec::from_genesis(
-		"Stafi Testnet Sitara2.0",
-		"stafi_sitara2.0",
+		"promethium Testnet Sitara2.0",
+		"promethium_sitara2.0",
 		ChainType::Live,
-		stafi_sitara_testnet_config_genesis,
+		promethium_sitara_testnet_config_genesis,
 		crate::testnet_fixtures::get_sitara_bootnodes(),
 		Some(TelemetryEndpoints::new(vec![(STAGING_TELEMETRY_URL.to_string(), 0)])
 			.expect("Staging telemetry url is valid; qed")),
@@ -233,12 +233,12 @@ pub fn stafi_incentive_testnet_config() -> ChainSpec {
 }
 
 /// Mainnet config.
-pub fn stafi_mainnet_spec_config() -> ChainSpec {
+pub fn promethium_mainnet_spec_config() -> ChainSpec {
 	ChainSpec::from_genesis(
-		"Stafi",
-		"stafi_mainnet",
+		"promethium",
+		"promethium_mainnet",
 		ChainType::Live,
-		stafi_mainnet_config_genesis,
+		promethium_mainnet_config_genesis,
 		crate::mainnet_fixtures::get_bootnodes(),
 		Some(TelemetryEndpoints::new(vec![(STAGING_TELEMETRY_URL.to_string(), 0)])
 			.expect("Mainnet telemetry url is valid; qed")),
@@ -593,6 +593,6 @@ pub(crate) mod tests {
 
 	#[test]
 	fn test_staging_test_net_chain_spec() {
-		stafi_public_testnet_config().build_storage().unwrap();
+		promethium_public_testnet_config().build_storage().unwrap();
 	}
 }

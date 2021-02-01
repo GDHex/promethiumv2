@@ -1,15 +1,15 @@
-// Copyright 2019-2020 Stafi Protocol.
-// This file is part of Stafi.
+// Copyright 2019-2020 promethium Protocol.
+// This file is part of promethium.
 
-// Stafi is distributed in the hope that it will be useful,
+// promethium is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU General Public License for more details.
 
 // You should have received a copy of the GNU General Public License
-// along with Stafi.  If not, see <http://www.gnu.org/licenses/>.
+// along with promethium.  If not, see <http://www.gnu.org/licenses/>.
 
-//! Some configurable implementations as associated type for the stafi runtime.
+//! Some configurable implementations as associated type for the promethium runtime.
 
 use node_primitives::Balance;
 use sp_runtime::traits::Convert;
@@ -151,7 +151,7 @@ mod multiplier_tests {
 
 	#[test]
 	fn time_to_reach_zero() {
-		// blocks per 24h in stafi-node: 28,800 (k)
+		// blocks per 24h in promethium-node: 28,800 (k)
 		// s* = 0.1875
 		// The bound from the research in an empty chain is:
 		// v <~ (p / k(0 - s*))

@@ -1,6 +1,6 @@
 {
-  "name": "Stafi Testnet Sitara2.0",
-  "id": "stafi_sitara2.0",
+  "name": "promethium Testnet Sitara2.0",
+  "id": "promethium_sitara2.0",
   "chainType": "Live",
   "bootNodes": [
     "/ip4/185.228.137.49/tcp/30334/p2p/12D3KooWDE2ZnFUzEV6kLFpMdDMpSyNnjuKq3dH4yJ97T2AYVFcc",

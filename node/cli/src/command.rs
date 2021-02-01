@@ -1,13 +1,13 @@
-// Copyright 2019-2020 Stafi Protocol.
-// This file is part of Stafi.
+// Copyright 2019-2020 promethium Protocol.
+// This file is part of promethium.
 
-// Stafi is distributed in the hope that it will be useful,
+// promethium is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU General Public License for more details.
 
 // You should have received a copy of the GNU General Public License
-// along with Stafi.  If not, see <http://www.gnu.org/licenses/>.
+// along with promethium.  If not, see <http://www.gnu.org/licenses/>.
 
 use crate::{chain_spec, service, Cli, Subcommand};
 use node_executor::Executor;
@@ -45,12 +45,12 @@ impl SubstrateCli for Cli {
 		Ok(match id {
 			"dev" => Box::new(chain_spec::development_config()),
 			"local" => Box::new(chain_spec::local_testnet_config()),
-			"public-test" => Box::new(chain_spec::stafi_public_testnet_config()),
-			"testnet" => Box::new(chain_spec::stafi_testnet_config()?),
-			"incentive-test" => Box::new(chain_spec::stafi_incentive_testnet_config()),
-			"sitara" => Box::new(chain_spec::stafi_sitara_testnet_config()?),
-			"stafi" => Box::new(chain_spec::stafi_mainnet_spec_config()),
-            "" | "mainnet" => Box::new(chain_spec::stafi_mainnet_config()?),
+			"public-test" => Box::new(chain_spec::promethium_public_testnet_config()),
+			"testnet" => Box::new(chain_spec::promethium_testnet_config()?),
+			"incentive-test" => Box::new(chain_spec::promethium_incentive_testnet_config()),
+			"sitara" => Box::new(chain_spec::promethium_sitara_testnet_config()?),
+			"promethium" => Box::new(chain_spec::promethium_mainnet_spec_config()),
+            "" | "mainnet" => Box::new(chain_spec::promethium_mainnet_config()?),
 			path => Box::new(chain_spec::ChainSpec::from_json_file(
 				std::path::PathBuf::from(path),
 			)?),

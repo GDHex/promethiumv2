@@ -1,15 +1,15 @@
-// Copyright 2019-2020 Stafi Protocol.
-// This file is part of Stafi.
+// Copyright 2019-2020 promethium Protocol.
+// This file is part of promethium.
 
-// Stafi is distributed in the hope that it will be useful,
+// promethium is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU General Public License for more details.
 
 // You should have received a copy of the GNU General Public License
-// along with Stafi.  If not, see <http://www.gnu.org/licenses/>.
+// along with promethium.  If not, see <http://www.gnu.org/licenses/>.
 
-//! A CLI extension for stafi node, adding sub-command to pretty print debug info
+//! A CLI extension for promethium node, adding sub-command to pretty print debug info
 //! about blocks and extrinsics.
 //!
 //! The blocks and extrinsics can either be retrieved from the database (on-chain),

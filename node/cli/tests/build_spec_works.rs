@@ -1,13 +1,13 @@
-// Copyright 2019-2020 Stafi Protocol.
-// This file is part of Stafi.
+// Copyright 2019-2020 promethium Protocol.
+// This file is part of promethium.
 
-// Stafi is distributed in the hope that it will be useful,
+// promethium is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU General Public License for more details.
 
 // You should have received a copy of the GNU General Public License
-// along with Stafi.  If not, see <http://www.gnu.org/licenses/>.
+// along with promethium.  If not, see <http://www.gnu.org/licenses/>.
 
 use assert_cmd::cargo::cargo_bin;
 use std::process::Command;
@@ -17,7 +17,7 @@ use tempfile::tempdir;
 fn build_spec_works() {
 	let base_path = tempdir().expect("could not create a temp dir");
 
-	let output = Command::new(cargo_bin("stafi"))
+	let output = Command::new(cargo_bin("promethium"))
 		.args(&["build-spec", "--dev", "-d"])
 		.arg(base_path.path())
 		.output()

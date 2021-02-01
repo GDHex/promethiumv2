@@ -1,13 +1,13 @@
-// Copyright 2019-2020 Stafi Protocol.
-// This file is part of Stafi.
+// Copyright 2019-2020 promethium Protocol.
+// This file is part of promethium.
 
-// Stafi is distributed in the hope that it will be useful,
+// promethium is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU General Public License for more details.
 
 // You should have received a copy of the GNU General Public License
-// along with Stafi.  If not, see <http://www.gnu.org/licenses/>.
+// along with promethium.  If not, see <http://www.gnu.org/licenses/>.
 
 //! Mainnet fixtures
 
@@ -23,12 +23,12 @@ use sc_network::{config::MultiaddrWithPeerId};
 /// Mainnet bootnodes
 pub fn get_bootnodes() -> Vec<MultiaddrWithPeerId> {
 	return vec![
-		"/dns/p2p.node-0.stafi.io/tcp/30333/p2p/12D3KooWSQnaHog7sezJ7qYubhsyuCuGyb61DGXaDo4HVf5bAmfu".parse().unwrap(),
-		"/dns/p2p.node-1.stafi.io/tcp/30333/p2p/12D3KooWFLnUHeuFqLDr5jxJFXdyt6tovUA3C7PYKNfTBr5dpkaa".parse().unwrap(),
-		"/dns/p2p.node-2.stafi.io/tcp/30333/p2p/12D3KooWK5H2wCL1vtRpgLEPfxAQsREjhzJu3tNXPg7Uohu6EpDb".parse().unwrap(),
-		"/dns/p2p.node-3.stafi.io/tcp/30333/p2p/12D3KooWBvrETZtMRPE94EiUsTtYvEe9gHrBvD6EoCtHaJ5VB2qh".parse().unwrap(),
-		"/dns/p2p.node-4.stafi.io/tcp/30333/p2p/12D3KooW9qmEqjNxnuhhQMM1XW3BMUWSzmXynuVyr4sQktFB87ud".parse().unwrap(),
-		"/dns/p2p.node-5.stafi.io/tcp/30333/p2p/12D3KooWPqJXX3scW76MYSjuEgn6Rb4NhyMJFtz9g4X3jgVuzJFm".parse().unwrap(),
+		"/dns/p2p.node-0.promethiumchain.org/tcp/30333/p2p/12D3KooWSQnaHog7sezJ7qYubhsyuCuGyb61DGXaDo4HVf5bAmfu".parse().unwrap(),
+		"/dns/p2p.node-1.promethiumchain.org/tcp/30333/p2p/12D3KooWFLnUHeuFqLDr5jxJFXdyt6tovUA3C7PYKNfTBr5dpkaa".parse().unwrap(),
+		"/dns/p2p.node-2.promethiumchain.org/tcp/30333/p2p/12D3KooWK5H2wCL1vtRpgLEPfxAQsREjhzJu3tNXPg7Uohu6EpDb".parse().unwrap(),
+		"/dns/p2p.node-3.promethiumchain.org/tcp/30333/p2p/12D3KooWBvrETZtMRPE94EiUsTtYvEe9gHrBvD6EoCtHaJ5VB2qh".parse().unwrap(),
+		"/dns/p2p.node-4.promethiumchain.org/tcp/30333/p2p/12D3KooW9qmEqjNxnuhhQMM1XW3BMUWSzmXynuVyr4sQktFB87ud".parse().unwrap(),
+		"/dns/p2p.node-5.promethiumchain.org/tcp/30333/p2p/12D3KooWPqJXX3scW76MYSjuEgn6Rb4NhyMJFtz9g4X3jgVuzJFm".parse().unwrap(),
 	];
 }
 

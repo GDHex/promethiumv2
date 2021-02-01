@@ -1,6 +1,6 @@
 {
-  "name": "Stafi Testnet Seiya",
-  "id": "stafi_public_testnet",
+  "name": "promethium Testnet Seiya",
+  "id": "promethium_public_testnet",
   "chainType": "Live",
   "bootNodes": [
     "/ip4/185.228.137.49/tcp/30333/p2p/12D3KooWSFhGrte1XYYHkktbkMjZbpyNjNbkcsxsN5nKZVrnbgL2",

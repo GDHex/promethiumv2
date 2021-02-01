@@ -2,7 +2,7 @@
 name = "node-executor"
 version = "0.4.0"
 authors = ["Promethium Chain 2020"]
-description = "Stafi node implementation in Rust."
+description = "promethium node implementation in Rust."
 edition = "2018"
 
 [package.metadata.docs.rs]

@@ -1,13 +1,13 @@
-// Copyright 2019-2020 Stafi Protocol.
-// This file is part of Stafi.
+// Copyright 2019-2020 promethium Protocol.
+// This file is part of promethium.
 
-// Stafi is distributed in the hope that it will be useful,
+// promethium is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU General Public License for more details.
 
 // You should have received a copy of the GNU General Public License
-// along with Stafi.  If not, see <http://www.gnu.org/licenses/>.
+// along with promethium.  If not, see <http://www.gnu.org/licenses/>.
 
 use assert_cmd::cargo::cargo_bin;
 use std::{convert::TryInto, process::Command, thread, time::Duration};
@@ -23,7 +23,7 @@ fn running_the_node_works_and_can_be_interrupted() {
 
 	fn run_command_and_kill(signal: Signal) {
 		let base_path = tempdir().expect("could not create a temp dir");
-		let mut cmd = Command::new(cargo_bin("stafi"))
+		let mut cmd = Command::new(cargo_bin("promethium"))
 			.args(&["--dev", "-d"])
 			.arg(base_path.path())
 			.spawn()

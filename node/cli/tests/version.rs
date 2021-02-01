@@ -1,13 +1,13 @@
-// Copyright 2019-2020 Stafi Protocol.
-// This file is part of Stafi.
+// Copyright 2019-2020 promethium Protocol.
+// This file is part of promethium.
 
-// Stafi is distributed in the hope that it will be useful,
+// promethium is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU General Public License for more details.
 
 // You should have received a copy of the GNU General Public License
-// along with Stafi.  If not, see <http://www.gnu.org/licenses/>.
+// along with promethium.  If not, see <http://www.gnu.org/licenses/>.
 
 use assert_cmd::cargo::cargo_bin;
 use platforms::*;
@@ -15,13 +15,13 @@ use regex::Regex;
 use std::process::Command;
 
 fn expected_regex() -> Regex {
-	Regex::new(r"^stafi (\d+\.\d+\.\d+(?:-.+?)?)-([a-f\d]+|unknown)-(.+?)-(.+?)(?:-(.+))?$").unwrap()
+	Regex::new(r"^promethium (\d+\.\d+\.\d+(?:-.+?)?)-([a-f\d]+|unknown)-(.+?)-(.+?)(?:-(.+))?$").unwrap()
 }
 
 #[test]
 fn version_is_full() {
 	let expected = expected_regex();
-	let output = Command::new(cargo_bin("stafi"))
+	let output = Command::new(cargo_bin("promethium"))
 		.args(&["--version"])
 		.output()
 		.unwrap();
@@ -50,7 +50,7 @@ fn test_regex_matches_properly() {
 	let expected = expected_regex();
 
 	let captures = expected
-		.captures("stafi 2.0.0-da487d19d-x86_64-linux-gnu")
+		.captures("promethium 2.0.0-da487d19d-x86_64-linux-gnu")
 		.unwrap();
 	assert_eq!(&captures[1], "2.0.0");
 	assert_eq!(&captures[2], "da487d19d");
@@ -59,7 +59,7 @@ fn test_regex_matches_properly() {
 	assert_eq!(captures.get(5).map(|x| x.as_str()), Some("gnu"));
 
 	let captures = expected
-		.captures("stafi 2.0.0-alpha.5-da487d19d-x86_64-linux-gnu")
+		.captures("promethium 2.0.0-alpha.5-da487d19d-x86_64-linux-gnu")
 		.unwrap();
 	assert_eq!(&captures[1], "2.0.0-alpha.5");
 	assert_eq!(&captures[2], "da487d19d");
@@ -68,7 +68,7 @@ fn test_regex_matches_properly() {
 	assert_eq!(captures.get(5).map(|x| x.as_str()), Some("gnu"));
 
 	let captures = expected
-		.captures("stafi 2.0.0-alpha.5-da487d19d-x86_64-linux")
+		.captures("promethium 2.0.0-alpha.5-da487d19d-x86_64-linux")
 		.unwrap();
 	assert_eq!(&captures[1], "2.0.0-alpha.5");
 	assert_eq!(&captures[2], "da487d19d");

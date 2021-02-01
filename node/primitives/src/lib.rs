@@ -1,15 +1,15 @@
-// Copyright 2019-2020 Stafi Protocol.
-// This file is part of Stafi.
+// Copyright 2019-2020 promethium Protocol.
+// This file is part of promethium.
 
-// Stafi is distributed in the hope that it will be useful,
+// promethium is distributed in the hope that it will be useful,
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU General Public License for more details.
 
 // You should have received a copy of the GNU General Public License
-// along with Stafi.  If not, see <http://www.gnu.org/licenses/>.
+// along with promethium.  If not, see <http://www.gnu.org/licenses/>.
 
-//! Low-level types used throughout the Stafi code.
+//! Low-level types used throughout the promethium code.
 
 #![warn(missing_docs)]
 
@@ -72,7 +72,7 @@ pub enum RSymbol {
 pub mod chain;
 pub use chain::*;
 
-/// Custom validity errors used in Stafi while validating transactions.
+/// Custom validity errors used in promethium while validating transactions.
 #[repr(u8)]
 pub enum ValidityError {
 	/// The dest has no claim.

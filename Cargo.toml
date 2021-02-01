@@ -1,0 +1,17 @@
+[workspace]
+members = [
+	# "node/bench",
+	"node/cli",
+	"node/executor",
+	"node/inspect",
+	"node/primitives",
+	"node/rpc-client",
+	"node/rpc",
+	"node/runtime",
+	# "node/testing",
+	"utils/wasm-builder",
+	"utils/wasm-builder-runner",
+]
+
+[profile.release]
+panic = "unwind"

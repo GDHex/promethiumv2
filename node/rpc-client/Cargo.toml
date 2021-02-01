@@ -1,0 +1,17 @@
+[package]
+name = "node-rpc-client"
+version = "0.4.0"
+authors = ["Promethium Chain 2020"]
+edition = "2018"
+
+[package.metadata.docs.rs]
+targets = ["x86_64-unknown-linux-gnu"]
+
+[dependencies]
+futures = "0.1.29"
+hyper = "0.12.35"
+jsonrpc-core-client = { version = "15.0.0", default-features = false, features = ["http"] }
+log = "0.4.8"
+node-primitives = { version = "0.4.0", path = "../primitives" }
+sp-tracing = { version = "2.0.1" }
+sc-rpc = { version = "2.0.1" }

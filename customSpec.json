@@ -4,7 +4,7 @@
   "chainType": "Live",
   "bootNodes": [
     "/dns/199.247.7.80/tcp/30333/p2p/12D3KooWLuHVvh5z8d5n6usm8qaMkzMTXdXNe4Mgp87ZxfEM9jvS",
-    "/dns/108.61.177.90/tcp/30333/p2p/12D3KooWLuHVvh5z8d5n6usm8qaMkzMTXdXNe4Mgp87ZxfEM9jvS"
+    "/dns/108.61.177.90/tcp/30333/p2p/12D3KooWMeJUJisc7PBgNxD3YF1JbJ4SXFKThjsKNYfKse5XqJxv"
   ],
   "telemetryEndpoints": [
     [

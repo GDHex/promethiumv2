@@ -49,7 +49,10 @@
         "minimumValidatorCount": 1,
         "invulnerables": [
           "5FnuBQcffpWxbnmPDte5R4w3V7CjeJDbKqRChxPfNcM5Asug",
-          "5CiQA1nn5vZTF3YgapZDjyfM8bE58i3c8RjcG4hCzZyu4sgg"
+          "5CiQA1nn5vZTF3YgapZDjyfM8bE58i3c8RjcG4hCzZyu4sgg",
+          "5EBhfqjiWZctPue8MvjVCRK34W7DL6aVptPEW4wNYYHP1RrN",
+          "5FEKbgRL8qsrJEaGmMJbWbLsAXt7sq8Fn6F7gQPXkUK3U4Kb",
+          "5HdsqLhsSTiPq7fqn9ArvaEAR37fqZa8HESxYVaKdRnM7HRJ"
         ],
         "forceEra": "NotForcing",
         "slashRewardFraction": 100000000,
@@ -57,7 +60,7 @@
         "stakers": [
           [
             "5CiQA1nn5vZTF3YgapZDjyfM8bE58i3c8RjcG4hCzZyu4sgg",
-            "5CiQA1nn5vZTF3YgapZDjyfM8bE58i3c8RjcG4hCzZyu4sgg",
+            "5EBhfqjiWZctPue8MvjVCRK34W7DL6aVptPEW4wNYYHP1RrN",
             30000000000000000,
             "Validator"
           ]
@@ -90,7 +93,7 @@
       "palletDemocracy": {},
       "palletCollectiveInstance1": {
         "phantom": null,
-        "members": ["5FnuBQcffpWxbnmPDte5R4w3V7CjeJDbKqRChxPfNcM5Asug"]
+        "members": ["5CiQA1nn5vZTF3YgapZDjyfM8bE58i3c8RjcG4hCzZyu4sgg"]
       },
       "palletCollectiveInstance2": {
         "phantom": null,
